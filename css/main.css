@@ -1,0 +1,28 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+line-height: 1.5em;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1066.6666px) {
+   h1 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+   h1 {
+    font-size: 24px;
+  }
+}

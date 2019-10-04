@@ -1,0 +1,23 @@
+.heading {
+  min-height: 80vh;
+  background: url(../images/dmitry-ratushny-xsGApcVbojU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 3.125vw 15.625vw;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.heading .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 588px) {
+  .heading h1 br {
+    display: none;
+  }
+}
