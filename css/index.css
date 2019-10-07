@@ -24,13 +24,13 @@ section > * {
   align-items: flex-end;
 }
 
-.explanation {
+.intro {
   overflow: hidden;
   position: relative;
   background: black;
 }
 
-.explanation > img {
+.intro > img {
   opacity: .4;
   position: absolute;
   width: 100%;
@@ -38,7 +38,7 @@ section > * {
   min-width: 850px;
 }
 
-.explanation .container {
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,7 @@ section > * {
   margin: 1.875vw auto;
 }
 
-.container * {
+.intro .container * {
   margin-bottom: 20px;
   color: white;
   z-index: 1;
@@ -66,6 +66,24 @@ section > * {
 .container > p {
   flex-basis: 40%;
   margin: 0px 1.25vw 5px;
+}
+
+.explanation .container {
+  justify-content: space-around;
+}
+
+.explanation .container div,
+.explanation .container img {
+  flex-basis: 40%;
+}
+
+.explanation .container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation .container div h1 {
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 588px) {
