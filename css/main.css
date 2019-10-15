@@ -13,11 +13,21 @@ line-height: 1.5em;
 
 h1 {
   font-size: 1.5vw;
+  margin-bottom: 15px;
 }
 
-@media screen and (max-width: 1066.6666px) {
+p {
+  margin: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1333.3333px) {
    h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 

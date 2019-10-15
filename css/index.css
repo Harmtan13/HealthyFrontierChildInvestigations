@@ -63,7 +63,8 @@ section > * {
   text-align: center;
 }
 
-.container > p {
+.container > p,
+.container > .img {
   flex-basis: 40%;
   margin: 0px 1.25vw 5px;
 }
@@ -72,8 +73,8 @@ section > * {
   justify-content: space-around;
 }
 
-.explanation .container div,
-.explanation .container img {
+.explanation .container > div,
+.explanation .container > .img {
   flex-basis: 40%;
 }
 
@@ -82,8 +83,37 @@ section > * {
   flex-direction: column;
 }
 
-.explanation .container div h1 {
-  margin-bottom: 15px;
+.purpose .container > * {
+  margin: 20px;
+}
+
+.purpose h1 {
+  text-align: center;
+}
+
+.purpose p {
+  max-width: 800px; 
+}
+
+.purpose-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.purpose-tile {
+  margin: 30px;
+  padding:0 20px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.purpose-tile p {
+  display: flex;
+  justify-content: center;;
 }
 
 @media screen and (max-width: 588px) {
@@ -93,5 +123,13 @@ section > * {
 
   .container > p {
     flex-basis: 75%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .explanation .container div, 
+  .explanation .container .img {
+    flex-basis: 75%;
+    margin: 5px 0;
   }
 }
