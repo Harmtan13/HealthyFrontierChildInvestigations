@@ -2,6 +2,7 @@ section {
   min-height: 80vh;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 section > * {
@@ -43,7 +44,7 @@ section > * {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1200px; 
+  max-width: 1240px; 
   margin: 1.875vw auto;
 }
 
@@ -83,37 +84,61 @@ section > * {
   flex-direction: column;
 }
 
+.purpose main {
+  background-color: #D3D3D3;
+  width: 90%;
+  padding: 30px 0;
+  color: black;
+}
+
 .purpose .container > * {
-  margin: 20px;
+  margin: 1.25vw;
 }
 
 .purpose h1 {
   text-align: center;
 }
 
-.purpose p {
-  max-width: 800px; 
+.purpose main p {
+  max-width: 800px;
+  margin: auto auto;
+  padding: 0 2.5vw;
 }
 
 .purpose-tiles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .purpose-tile {
-  margin: 30px;
-  padding:0 20px;
+  flex: 1 1 300px;
   height: 300px;
-  width: 300px;
+  margin: 20px;
+  padding:0 40px 15px;
   display: flex;
-  align-items: center;
-  border: 1px solid black;
+  align-items: flex-end;
+  background-color: gray;
 }
 
-.purpose-tile p {
-  display: flex;
-  justify-content: center;;
+.purpose-tile:last-child {
+  flex: 0 0 80%;
+  height: auto;
+  display: block;
+}
+
+.purpose-tile:last-child > p {
+  padding: 10px;
+}
+
+.purpose-tile:last-child .capacity-skills {
+  display: block;
+  column-count: 2;
+}
+
+.purpose-tile:last-child .capacity-skill {
+  margin: 15px 10px;
+  color: white;
 }
 
 @media screen and (max-width: 588px) {
