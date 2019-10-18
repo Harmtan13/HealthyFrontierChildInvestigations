@@ -118,13 +118,37 @@ section > * {
   padding:0 40px 15px;
   display: flex;
   align-items: flex-end;
-  background-color: gray;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.purpose-tile:first-child {
+  background-image: url(../images/baby-beautiful-blur-322070.jpg);
+}
+
+.purpose-tile:nth-child(2) {
+  background-image: url(../images/baby-boys-brothers-50692.jpg);
+}
+
+.purpose-tile:nth-child(3) {
+  background-image: url(../images/baby-blur-child-733880.jpg);
+}
+
+.purpose-tile:nth-child(4) {
+  background-image: url(../images/child-enjoyment-from-above-2790771.jpg);
+}
+
+.purpose-tile:nth-child(5){
+  background-image: url(../images/adorable-book-boy-1250722.jpg);
 }
 
 .purpose-tile:last-child {
   flex: 0 0 80%;
   height: auto;
   display: block;
+  background-image: url(../images/honesty.jpg);
 }
 
 .purpose-tile:last-child > p {
