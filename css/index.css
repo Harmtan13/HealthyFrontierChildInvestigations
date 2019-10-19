@@ -64,8 +64,8 @@ section > * {
   text-align: center;
 }
 
-.container > p,
-.container > .img {
+.intro .container > p,
+.intro .container > .img {
   flex-basis: 40%;
   margin: 0px 1.25vw 5px;
 }
@@ -166,7 +166,7 @@ section > * {
   flex: 0 0 96.7%;
   height: auto;
   display: flex;
-  padding: 15px 100px;
+  padding: 25px 100px;
   flex-direction: column;
   background-image: url(../images/stock-photo-macro-photo-of-tooth-wheel-mechanism-with-trust-reliability-consistency-competence-integrity-737412415.jpg);
 }
@@ -181,6 +181,15 @@ section > * {
   column-gap: 50px;
   z-index: 2;
   margin-top: 15px;
+}
+
+.contact {
+  background-color: rgba(34, 34, 34, 1);
+  color: rgba(255, 255, 255, .9);
+}
+
+.contact .container > p {
+  max-width: 800px;
 }
 
 @media screen and (max-width: 588px) {
