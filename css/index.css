@@ -122,6 +122,24 @@ section > * {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.purpose-tile::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .5);
+  z-index: 0;
+}
+
+.purpose-tile * {
+  z-index: 2;
+  margin-bottom: 15px;
 }
 
 .purpose-tile:first-child {
@@ -145,24 +163,24 @@ section > * {
 }
 
 .purpose-tile:last-child {
-  flex: 0 0 80%;
+  flex: 0 0 96.7%;
   height: auto;
-  display: block;
-  background-image: url(../images/honesty.jpg);
+  display: flex;
+  padding: 15px 100px;
+  flex-direction: column;
+  background-image: url(../images/stock-photo-macro-photo-of-tooth-wheel-mechanism-with-trust-reliability-consistency-competence-integrity-737412415.jpg);
 }
 
-.purpose-tile:last-child > p {
-  padding: 10px;
+.purpose-tile:last-child::before {
+  background-color: rgba(0,0,0, .8);
 }
 
 .purpose-tile:last-child .capacity-skills {
   display: block;
   column-count: 2;
-}
-
-.purpose-tile:last-child .capacity-skill {
-  margin: 15px 10px;
-  color: white;
+  column-gap: 50px;
+  z-index: 2;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 588px) {
